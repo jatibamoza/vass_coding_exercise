@@ -21,6 +21,7 @@ It enables Salesforce to store, update, and associate country information with L
 - Git + VSCode + SFDX (Salesforce CLI)
 
 ## 📁 Project Structure
+```plaintext
 force-app/
 ├── main/
 │   └── default/
@@ -33,7 +34,7 @@ force-app/
 ├── scripts/
 │   └── apex/                  # Automation scripts (e.g., VASS_Schedule_CountriesApi_Daily.apex)
 └── README.md                  # Project documentation 
-
+```
 
 ## ⏰ Schedule Execution
 The daily execution of the scheduled job can be configured using the script:
