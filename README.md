@@ -23,12 +23,12 @@ It enables Salesforce to store, update, and associate country information with L
 ## 📁 Project Structure
 force-app/
 ├── main/
-│ └── default/
-│   ├── classes/
-│   ├── triggers/
-│   ├── flows/
-│   ├── objects/
-│   └── settings/
+│   └── default/
+│       ├── classes/
+│       ├── triggers/
+│       ├── flows/
+│       ├── objects/
+│       └── settings/
 ├── manifest/
 ├── scripts/
 │   └── apex/
