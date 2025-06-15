@@ -34,9 +34,9 @@ force-app/
 ├── scripts/
 │   └── apex/                  # Automation scripts (e.g., VASS_Schedule_CountriesApi_Daily.apex)
 └── README.md                  # Project documentation 
-```
+
 Apex Classes
-(-) TriggerHandler
+- TriggerHandler
 - TriggerHandler_tst
 - VASS_BaseException
 - VASS_BaseException_tst
@@ -129,7 +129,7 @@ Remote Site Settings
 
 Validation Rules
 - Lead.VASS_Change_Owner
-
+```
 
 ## ⏰ Schedule Execution
 The daily execution of the scheduled job can be configured using the script:
