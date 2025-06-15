@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_CapitalCity__c</fullName>
+    <description>Name of the country&apos;s capital city. This is the primary city where the government is typically seated and where major national institutions are located (e.g., &quot;Berlin&quot; for Germany, &quot;Tokyo&quot; for Japan).</description>
+    <externalId>false</externalId>
+    <label>Capital city</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

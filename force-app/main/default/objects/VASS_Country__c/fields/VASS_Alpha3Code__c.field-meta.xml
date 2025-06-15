@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_Alpha3Code__c</fullName>
+    <description>Three-letter country code assigned according to the ISO 3166-1 alpha-3 standard. This code provides a more recognizable and less ambiguous representation of country names in international systems (e.g., &quot;USA&quot; for United States, &quot;FRA&quot; for France).</description>
+    <externalId>true</externalId>
+    <label>Alpha3Code</label>
+    <length>3</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

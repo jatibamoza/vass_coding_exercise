@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_Country3Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>VASS_Country__r.VASS_Alpha3Code__c</formula>
+    <label>Country 3 Code</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

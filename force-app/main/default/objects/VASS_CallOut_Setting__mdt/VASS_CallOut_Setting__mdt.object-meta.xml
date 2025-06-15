@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Custom Settings store configurable parameters for external HTTP callouts performed from Salesforce. This object centralizes key settings such as endpoint URLs, HTTP methods, authentication types, headers, timeouts, and other request-related options to enable flexible and scalable integration management without the need to modify Apex code.</description>
+    <label>CallOut Setting</label>
+    <pluralLabel>CallOuts Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_Change_Owner</fullName>
+    <active>true</active>
+    <description>This rule prevents changing the Lead owner unless certain mandatory fields are completed.
+Specifically, it requires that the fields Country, Lead Source, and Number of Employees are filled in before the owner can be changed.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(OwnerId),
+  OR(
+    AND(
+      $Profile.Id = &quot;00eQy00000Ez4bL&quot;,
+      ISPICKVAL(LeadSource, &quot;&quot;)
+    ),
+    AND(
+      $Profile.Id = &quot;00eQy00000Ez4by&quot;,
+      OR(
+        ISPICKVAL(LeadSource, &quot;&quot;),
+        ISBLANK(Country)
+      )
+    ),
+    AND(
+      NOT(
+        OR(
+          $Profile.Id = &quot;00eQy00000Ez4bL&quot;,
+          $Profile.Id = &quot;00eQy00000Ez4by&quot;
+        )
+      ),
+      OR(
+        ISPICKVAL(LeadSource, &quot;&quot;),
+        ISBLANK(Country),
+        ISBLANK(NumberOfEmployees)
+      )
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>You cannot change the Lead owner unless the required fields are completed:
+System Administrators:Lead Source is mandatory
+Contract Managers:Country and Lead Source are mandatory
+Other profiles:Country,Lead Source,and Number of Employees are mandatory.</errorMessage>
+</ValidationRule>

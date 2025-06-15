@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>TriggerHandler</members>
+        <members>TriggerHandler_tst</members>
+        <members>VASS_BaseException</members>
+        <members>VASS_BaseException_tst</members>
+        <members>VASS_CallOutManager</members>
+        <members>VASS_CallOutManager_tst</members>
+        <members>VASS_CountriesApiHelper</members>
+        <members>VASS_CountriesApiHelper_tst</members>
+        <members>VASS_CountriesApi_bch</members>
+        <members>VASS_CountriesApi_sch</members>
+        <members>VASS_CountriesApi_tst</members>
+        <members>VASS_CountriesWrapper</members>
+        <members>VASS_CountryTriggerHandler</members>
+        <members>VASS_CountryTriggerHandler_tst</members>
+        <members>VASS_Get_CallOutSettings</members>
+        <members>VASS_CountriesMock</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>VASS_Country_tgr</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Lead.VASS_Country3Code__c</members>
+        <members>Lead.VASS_Country__c</members>
+        <members>Lead.VASS_OwnerSince__c</members>
+        <members>Lead.VASS_Region__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_ApiKey__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_Domain__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_HTTP_Method__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_Is_Active__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_Named_Credential__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_Path__c</members>
+        <members>VASS_CallOut_Setting__mdt.VASS_Timeout__c</members>
+        <members>VASS_Country__c.VASS_Acronyms__c</members>
+        <members>VASS_Country__c.VASS_Alpha2Code__c</members>
+        <members>VASS_Country__c.VASS_Alpha3Code__c</members>
+        <members>VASS_Country__c.VASS_CapitalCity__c</members>
+        <members>VASS_Country__c.VASS_Region__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>VASS_CallOut_Setting.countries</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Lead</members>
+        <members>VASS_CallOut_Setting__mdt</members>
+        <members>VASS_Country__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>VASS_CallOut_Setting__mdt-es</members>
+        <members>VASS_Country__c-es</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Lead.Standard_Lead_Duplicate_Rule</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>VASS_CountryLayerExternalCredential</members>
+        <name>ExternalCredential</name>
+    </types>
+    <types>
+        <members>Lead_After_Update</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Lead_After_Update</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>Lead-Lead %28Marketing%29 Layout</members>
+        <members>Lead-Lead %28Sales%29 Layout</members>
+        <members>Lead-Lead %28Support%29 Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>VASS_CallOut_Setting__mdt-Formato CallOut Setting</members>
+        <members>VASS_Country__c-Formato Country</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Lead.AllOpenLeads</members>
+        <members>Lead.MyUnreadLeads</members>
+        <members>Lead.TodaysLeads</members>
+        <members>Lead.ViewCustom1</members>
+        <members>Lead.ViewCustom2</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>VASS_CountryLayerNamedCred</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>Anypoint Integration</members>
+        <members>Authenticated Website</members>
+        <members>B2B Reordering Portal Buyer Profile</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>ContractManager</members>
+        <members>Cross Org Data Proxy User</members>
+        <members>Custom%3A Marketing Profile</members>
+        <members>Custom%3A Sales Profile</members>
+        <members>Custom%3A Support Profile</members>
+        <members>Customer Community Login User</members>
+        <members>Customer Community Plus Login User</members>
+        <members>Customer Community Plus User</members>
+        <members>Customer Community User</members>
+        <members>Customer Portal Manager Custom</members>
+        <members>Customer Portal Manager Standard</members>
+        <members>External Apps Login User</members>
+        <members>External Identity User</members>
+        <members>Force%2Ecom - App Subscription User</members>
+        <members>Force%2Ecom - Free User</members>
+        <members>Gold Partner User</members>
+        <members>High Volume Customer Portal User</members>
+        <members>HighVolumePortal</members>
+        <members>Identity User</members>
+        <members>MarketingProfile</members>
+        <members>Minimum Access - API Only Integrations</members>
+        <members>Minimum Access - Salesforce</members>
+        <members>Partner App Subscription User</members>
+        <members>Partner Community Login User</members>
+        <members>Partner Community User</members>
+        <members>PlatformPortal</members>
+        <members>Read Only</members>
+        <members>Salesforce API Only System Integrations</members>
+        <members>Silver Partner User</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>Work%2Ecom Only User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>ApexDevNet</members>
+        <members>countrylayer</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>Lead.VASS_Change_Owner</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>63.0</version>
+</Package>

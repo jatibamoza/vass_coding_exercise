@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_Region__c</fullName>
+    <description>The broad geographic region to which the country belongs, based on common continental or geopolitical classifications. Examples include &quot;Europe&quot;, &quot;Asia&quot;, &quot;Africa&quot;, &quot;Americas&quot;, or &quot;Oceania&quot;.</description>
+    <externalId>false</externalId>
+    <label>Region</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

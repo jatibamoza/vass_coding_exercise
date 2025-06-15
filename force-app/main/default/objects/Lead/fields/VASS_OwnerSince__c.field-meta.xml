@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_OwnerSince__c</fullName>
+    <description>Stores the timestamp of the most recent owner assignment. This field is automatically updated whenever the Lead ownership changes, and it helps track how long the current owner has held the record.</description>
+    <externalId>false</externalId>
+    <label>Owner Since</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

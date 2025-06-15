@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>countries</label>
+    <protected>false</protected>
+    <values>
+        <field>VASS_ApiKey__c</field>
+        <value xsi:type="xsd:string">3f516241882b08b73d58dafdb22873b2</value>
+    </values>
+    <values>
+        <field>VASS_Domain__c</field>
+        <value xsi:type="xsd:string">https://api.countrylayer.com</value>
+    </values>
+    <values>
+        <field>VASS_HTTP_Method__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>VASS_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>VASS_Named_Credential__c</field>
+        <value xsi:type="xsd:string">VASS_CountryLayerNamedCred</value>
+    </values>
+    <values>
+        <field>VASS_Path__c</field>
+        <value xsi:type="xsd:string">/v2/all</value>
+    </values>
+    <values>
+        <field>VASS_Timeout__c</field>
+        <value xsi:type="xsd:double">60000.0</value>
+    </values>
+</CustomMetadata>
