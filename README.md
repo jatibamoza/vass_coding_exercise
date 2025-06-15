@@ -1,18 +1,45 @@
-# Salesforce DX Project: Next Steps
+# VASS Countries API Integration
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This Salesforce DX project implements an integration with the [CountryLayer API](https://countrylayer.com/).  
+It enables Salesforce to store, update, and associate country information with Leads automatically.
 
-## How Do You Plan to Deploy Your Changes?
+## 🔧 Key Features
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- ✅ Daily scheduled callout to CountryLayer API
+- ✅ Stores country details: name, ISO codes, capital, region, acronyms
+- ✅ Trigger logic updates Leads based on country match (by name or Alpha-3 code)
+- ✅ Validation Rule to restrict Lead Owner change unless key fields are filled
+- ✅ Flow automation to track Lead Owner assignment timestamps
+- ✅ Metadata-driven configuration via Custom Metadata Type (`CallOut_Settings__mdt`)
+- ✅ Full test coverage and deployment-ready code
 
-## Configure Your Salesforce DX Project
+## 🧪 Technologies Used
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Apex (with `Schedulable`, `Queueable`, `Future`, `HttpCalloutMock`)
+- Salesforce Custom Metadata
+- Salesforce Flows and Validation Rules
+- Git + VSCode + SFDX (Salesforce CLI)
 
-## Read All About It
+## 📁 Project Structure
+force-app/
+├── main/
+│ └── default/
+│   ├── classes/
+│   ├── triggers/
+│   ├── flows/
+│   ├── objects/
+│   └── settings/
+├── manifest/
+├── scripts/
+└── README.md
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## ⏰ Schedule Execution
+The daily execution of the scheduled job can be configured using the script:
+VASS_Schedule_CountriesApi_Daily.apex
+
+This script schedules the VASS_CountriesApi_sch class to run every day at 6:00 AM using Salesforce's built-in System.schedule() method and a CRON expression.
+
+## 🧑‍💻 Developed by
+
+**Javier Armando Tibamoza Cubillos**  
+📧 [javier.tibamoza.cubillos@gmail.com](mailto:javier.tibamoza.cubillos@gmail.com)
