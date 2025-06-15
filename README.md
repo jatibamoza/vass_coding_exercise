@@ -24,15 +24,16 @@ It enables Salesforce to store, update, and associate country information with L
 force-app/
 ├── main/
 │   └── default/
-│       ├── classes/
-│       ├── triggers/
-│       ├── flows/
-│       ├── objects/
-│       └── settings/
-├── manifest/
+│       ├── classes/           # Apex classes (logic, helpers, exceptions)
+│       ├── triggers/          # Trigger and trigger handlers
+│       ├── flows/             # Flow metadata
+│       ├── objects/           # Custom objects and fields (e.g., VASS_Country__c)
+│       └── settings/          # Custom metadata types (e.g., CallOut_Settings__mdt)
+├── manifest/                  # Package.xml for deployment or retrieval
 ├── scripts/
-│   └── apex/
-└── README.md
+│   └── apex/                  # Automation scripts (e.g., VASS_Schedule_CountriesApi_Daily.apex)
+└── README.md                  # Project documentation
+
 
 ## ⏰ Schedule Execution
 The daily execution of the scheduled job can be configured using the script:
